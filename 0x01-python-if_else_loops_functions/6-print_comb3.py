@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
-for i in range(10):
-    for j in range(i + 1, 10):
-        print("{:02d}".format(i), "{:02d}".format(j), end=", " if j < 9 else "\n")
+
+for dig_1 in range(0, 10):
+    for dig_2 in range(dig_1 + 1, 10):
+        if dig_1 == 8 and dig_2 == 9:
+            print("{}{}".format(dig_1, dig_2))
+        else:
+            print("{}{}".format(dig_1, dig_2), end=", ")
