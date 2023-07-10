@@ -1,16 +1,16 @@
 #!/usr/bin/python3
 """
-101-add_attribute to an object 
+101-add_attribute Module
 """
 
 
 def add_attribute(obj, objname, value):
     """
-    add_attribute to object
+    add_attribute to an object
     args:
-        obj: object class 
-        objname: name of object
-        value: attribute's value
+        obj: class object
+        objname: object name
+        value: value of attribute
     """
     if hasattr(obj, "__dict__") is False:
         raise TypeError("can't add new attribute")
