@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" script to save and load """
+"""Adds all arguments to a list and save them to file as json.
+"""
+
 
 import sys
 
