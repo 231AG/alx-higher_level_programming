@@ -1,4 +1,6 @@
-SELECT score, name
-FROM second_table
-HAVING name IS NOT NULL
-ORDER BY score DESC;
+-- lists all records of the table secondtable have name value in sql server
+-- records are ordered by descended score
+SELECT `score`, `name`
+FROM `second_table`
+WHERE `name` != ""
+ORDER BY `score` DESC
